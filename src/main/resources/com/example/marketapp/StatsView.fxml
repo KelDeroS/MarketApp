@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.marketapp.StatsController">
+   <children>
+      <TableView fx:id="statsTable" layoutX="14.0" layoutY="14.0" prefHeight="316.0" prefWidth="1186.0" AnchorPane.bottomAnchor="270.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="14.0">
+        <columns>
+          <TableColumn fx:id="statsName" prefWidth="112.0" text="Товар" />
+            <TableColumn fx:id="statsSoldLast" prefWidth="166.40000915527344" text="Продано за период" />
+            <TableColumn fx:id="statsRevenueLast" minWidth="0.0" prefWidth="171.20001220703125" text="Выручка за период" />
+          <TableColumn fx:id="statsSold" prefWidth="116.0" text="Всего продано" />
+            <TableColumn fx:id="statsSpent" minWidth="0.0" prefWidth="137.60003662109375" text="Себестоимость товара" />
+            <TableColumn fx:id="statsRevenue" minWidth="0.0" prefWidth="128.00006103515625" text="Выручка за товар" />
+            <TableColumn fx:id="statsGained" prefWidth="95.20001220703125" text="Итого" />
+            <TableColumn fx:id="statsLeftInStore" prefWidth="128.0" text="Осталось в магазине" />
+            <TableColumn fx:id="statsLeftInWarehouse" prefWidth="134.400146484375" text="Осталось на складе" />
+        </columns>
+      </TableView>
+      <TextField fx:id="bestSellField" alignment="CENTER" editable="false" layoutX="1059.0" layoutY="66.0" prefHeight="26.0" prefWidth="171.0" AnchorPane.leftAnchor="1220.0" AnchorPane.rightAnchor="20.0" />
+      <TextField fx:id="bestRevenueField" alignment="CENTER" editable="false" layoutX="1059.0" layoutY="144.0" prefHeight="26.0" prefWidth="171.0" AnchorPane.leftAnchor="1220.0" AnchorPane.rightAnchor="20.0" />
+      <TextField fx:id="sumSpentField" alignment="CENTER" editable="false" layoutX="1220.0" layoutY="221.0" prefHeight="26.0" prefWidth="171.0" AnchorPane.leftAnchor="1220.0" AnchorPane.rightAnchor="20.0" />
+      <TextField fx:id="sumGainedField" alignment="CENTER" editable="false" layoutX="1220.0" layoutY="370.0" prefHeight="26.0" prefWidth="171.0" AnchorPane.leftAnchor="1220.0" AnchorPane.rightAnchor="20.0" />
+      <TextField fx:id="estimationField" alignment="CENTER" editable="false" layoutX="1220.0" layoutY="448.0" prefHeight="26.0" prefWidth="171.0" AnchorPane.leftAnchor="1220.0" AnchorPane.rightAnchor="20.0" />
+      <Label alignment="CENTER" layoutX="1059.0" layoutY="39.0" prefHeight="26.0" prefWidth="171.0" text="Самый продаваемый товар:" AnchorPane.leftAnchor="1220.0" AnchorPane.rightAnchor="20.0" />
+      <Label alignment="CENTER" layoutX="1059.0" layoutY="117.0" prefHeight="26.0" prefWidth="171.0" text="Самый выгодный товар:" AnchorPane.leftAnchor="1220.0" AnchorPane.rightAnchor="20.0" />
+      <Label alignment="CENTER" layoutX="1059.0" layoutY="195.0" prefHeight="26.0" prefWidth="171.0" text="Суммарно потрачено:" AnchorPane.leftAnchor="1220.0" AnchorPane.rightAnchor="20.0" />
+      <Label alignment="CENTER" layoutX="1220.0" layoutY="344.0" prefHeight="26.0" prefWidth="171.0" text="Итого" AnchorPane.leftAnchor="1220.0" AnchorPane.rightAnchor="20.0" />
+      <Label alignment="CENTER" layoutX="1220.0" layoutY="422.0" prefHeight="26.0" prefWidth="160.0" text="Прогноз:" AnchorPane.leftAnchor="1220.0" AnchorPane.rightAnchor="20.0" />
+      <Label alignment="CENTER" layoutX="1220.0" layoutY="508.0" prefHeight="26.0" prefWidth="171.0" text="Текущий день:" AnchorPane.leftAnchor="1220.0" AnchorPane.rightAnchor="20.0" />
+      <TextField fx:id="dayCounterField" alignment="CENTER" editable="false" layoutX="1220.0" layoutY="534.0" prefHeight="26.0" prefWidth="171.0" AnchorPane.leftAnchor="1220.0" AnchorPane.rightAnchor="20.0" />
+      <TableView fx:id="estimationStatsTable" layoutX="14.0" layoutY="364.0" prefHeight="242.0" prefWidth="1186.0" AnchorPane.bottomAnchor="14.0" AnchorPane.topAnchor="344.0">
+        <columns>
+            <TableColumn fx:id="statsEstimationName" prefWidth="112.0" text="Товар" />
+          <TableColumn fx:id="statsEstimationReal" prefWidth="460.8000030517578" text="Прогноз (от полученных данных)" />
+          <TableColumn fx:id="statsEstimationTheoretical" minWidth="0.0" prefWidth="596.7998657226562" text="Прогноз на месяц (от входных данных)" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="1220.0" layoutY="273.0" prefHeight="26.0" prefWidth="171.0" text="Суммарно выручено:" AnchorPane.leftAnchor="1220.0" AnchorPane.rightAnchor="20.0" />
+      <TextField fx:id="sumRevenueField" alignment="CENTER" editable="false" layoutX="1220.0" layoutY="299.0" prefHeight="26.0" prefWidth="171.0" AnchorPane.leftAnchor="1220.0" AnchorPane.rightAnchor="20.0" />
+   </children>
+</AnchorPane>

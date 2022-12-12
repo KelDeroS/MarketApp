@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.marketapp.AllProductsController">
+   <children>
+      <TableView fx:id="allProductsTable" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <columns>
+          <TableColumn fx:id="allProductsName" prefWidth="107.99999713897705" text="Товар" />
+          <TableColumn fx:id="allProductsAmountInWarehouse" prefWidth="139.99998474121094" text="Поступление на склад" />
+            <TableColumn fx:id="allProductsBuyPrice" prefWidth="91.20001220703125" text="Цена закупки" />
+            <TableColumn fx:id="allProductsMinSold" prefWidth="179.99993896484375" text="Минимально продано в день" />
+            <TableColumn fx:id="allProductsMaxSold" prefWidth="188.00006103515625" text="Максимально продано в день" />
+            <TableColumn fx:id="allProductsAmountInStore" prefWidth="146.4000244140625" text="Поступление в магазин" />
+            <TableColumn fx:id="allProductsSellPrice" prefWidth="99.19996643066406" text="Цена продажи" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
